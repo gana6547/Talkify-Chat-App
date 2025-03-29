@@ -1,0 +1,13 @@
+{
+  "name": "talkify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix chatApp-Be && npm install --prefix chat-App && npm run build --prefix chat-App/chat-App-Fe",
+    "start": "npm run start --prefix chatApp-Be"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
