@@ -12,7 +12,7 @@ import cookieParser from "cookie-parser";
 import { app,server } from "./lib/socket";
 
 const PORT=process.env.PORT;
-const __dirname=path.resolve();
+
 
 dotenv.config()
 app.use(cors({
@@ -26,11 +26,11 @@ app.use("/api/auth",auhtRouter)
 app.use("/api/messages",messageRouter)
 
 if(process.env.NODE_ENV==="production"){
-   app.use(express.static(path.join(__dirname,"../chat-App/chat-App-Fe/dist")))
+   app.use(express.static(path.join(__dirname,"../chat-App-Fe/dist")))
 
 
    app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"../chat-App/chat-App-Fe","dist","index.html"));
+    res.sendFile(path.join(__dirname,"../chat-App-Fe","dist","index.html"));
    })
 }
 
