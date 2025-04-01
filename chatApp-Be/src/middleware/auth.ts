@@ -9,7 +9,7 @@ interface JWTPayload extends Request{
 declare global {
     namespace Express {
       interface Request {
-        user?: any;  // You can define the user type more specifically based on your User model
+        user: any;  // You can define the user type more specifically based on your User model
       }
     }
   }
