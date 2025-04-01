@@ -30,7 +30,7 @@ if(process.env.NODE_ENV==="production"){
 
 
    app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"../chat-App-Fe","dist","index.html"));
+    res.sendFile(path.join(__dirname,"..git remote rm origin/chat-App-Fe","dist","index.html"));
    })
 }
 

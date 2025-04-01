@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix chatApp-Be && npm install --prefix chat-App && npm run build --prefix chat-App-Fe",
+    "build": "npm install --prefix chatApp-Be && npm install --prefix chat-App-Fe && npm run build --prefix chat-App-Fe",
     "start": "npm run start --prefix chatApp-Be"
   },
   "keywords": [],
