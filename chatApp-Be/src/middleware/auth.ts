@@ -4,8 +4,16 @@ import { Request,Response,NextFunction } from "express";
 
 interface JWTPayload extends Request{
     userId:string,
-    user:any
 }
+
+declare global {
+    namespace Express {
+      interface Request {
+        user?: any;  // You can define the user type more specifically based on your User model
+      }
+    }
+  }
+  
 console.log("at protect route");
 
 export const protectRoute=async(req:Request,res:Response,next:NextFunction):Promise<void>=>{
