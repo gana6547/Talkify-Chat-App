@@ -1,6 +1,7 @@
 import mongoose, { model } from "mongoose";
 
-interface IUser{
+export interface IUser{
+    _id?:string
     email:String;
     password:String;
     fullName:String;
