@@ -3,7 +3,7 @@ import User from "../models/user";
 import { Request,Response,NextFunction } from "express";
 
 interface JWTPayload extends Request{
-    userId:String,
+    userId:string,
     user:any
 }
 console.log("at protect route");
